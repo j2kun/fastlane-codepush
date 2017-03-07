@@ -24,7 +24,7 @@ module Fastlane
         puts ""
 
         # code-push promote <appName> <sourceDeploymentName> <destDeploymentName> [options]
-        command = "code-push promote #{params[:app_name]} #{params[:source_deployment]} #{params[:target_deployment]}"\
+        command = "code-push promote #{params[:app_name]} #{params[:source_deployment]} #{params[:target_deployment]} "\
                   "-r #{params[:rollout]} --des \"#{params[:description]}\" "
         if params[:mandatory]
            command += "-m "
