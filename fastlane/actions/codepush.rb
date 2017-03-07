@@ -108,7 +108,7 @@ module Fastlane
             env_name: "CODEPUSH_DRY_RUN",
             description: "Print the command that would be run, and don't run it",
             is_string: false,
-            default_value: true
+            default_value: false
           ),
 
           FastlaneCore::ConfigItem.new(
